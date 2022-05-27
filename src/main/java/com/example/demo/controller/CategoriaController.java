@@ -40,6 +40,7 @@ public class CategoriaController {
     public void deleteCategoria(@PathVariable(value = "id_categoria") int id_categoria) {
         categoriaRepository.deleteById(id_categoria);
     }
+
  //Postman usar JSON en vez de texto.
     @PutMapping("/update/{id_categoria}")
     public Categoria updateCategoria(@RequestBody Categoria categoria, @PathVariable(value = "id_categoria") int id_categoria) {
